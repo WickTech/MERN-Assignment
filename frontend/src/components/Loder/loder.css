@@ -1,0 +1,115 @@
+.html {
+    background-image: radial-gradient(
+       circle farthest-corner at -4% -12.9%,
+       rgb(166, 170, 173) 0.3%,
+       rgb(112, 112, 123) 90.2%
+    );
+  
+ }
+ 
+ 
+   .containerloder {
+      background-color: transparent;
+      position: fixed; /* Fixed position to cover the entire viewport */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      display: flex;
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
+      z-index: 9999; /* Ensure it's above other content */
+  }
+  
+ 
+ 
+ .lineloder {
+    position: relative;
+    background-color: #ebe6e680;
+    display: inline-block;
+    height: 0px;
+    border-radius: 5px;
+    width: 10px;
+    margin: 10px;
+    animation: line linear infinite 0.9s;
+ }
+ 
+ @keyframes line {
+    0% {
+       height: 0px;
+       margin-top: 60px;
+    }
+    50% {
+       height: 50px;
+       margin-top: 10px;
+    }
+    100% {
+       height: 0px;
+       margin-top: 60px;
+    }
+ }
+ 
+ .d1 {
+    animation-delay: 0.15s;
+ }
+ .d2 {
+    animation-delay: 0.3s;
+ }
+ .d3 {
+    animation-delay: 0.45s;
+ }
+ .d4 {
+    animation-delay: 0.6s;
+ }
+ .d5 {
+    animation-delay: 0.75s;
+ }
+ .d6 {
+    animation-delay: 0.9s;
+ }
+ 
+ .noto-sans-unique-class {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal; 
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+ .caption-loder {
+    text-align: center;
+    color: #ffffff90;
+    font-family: "Noto Sans", sans-serif;
+    margin-top: 88px;
+    margin-left: -110px;
+ }
+ 
+ .dot {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    animation: dot 1s infinite linear;
+ }
+ 
+ .dot:nth-child(2) {
+    animation-delay: 0.2s;
+ }
+ 
+ .dot:nth-child(3) {
+    animation-delay: 0.4s;
+ }
+ 
+ @keyframes dot {
+    0%,
+    100% {
+       opacity: 0;
+    }
+    50% {
+       opacity: 1;
+    }
+ }
+ 
+ ::selection {
+    background-color: transparent;
+ }
+ 
